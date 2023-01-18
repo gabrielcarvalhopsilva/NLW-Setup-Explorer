@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --violetRocketSeat: #8B5CF6;
+    --lightVioletRocketSeat: #A78BFA;
+    --blackRocketSeat: #09090A;
+    --darkGreyRockeatSeat: #18181B;
+    color: white;
+}
+
+body {
+    background-color: var(--blackRocketSeat);
+}
+
+header{
+    padding: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    margin: 24px;
+    padding: 16px 24px;
+
+    background-color: var(--blackRocketSeat);
+    border: 2px solid var(--violetRocketSeat);
+    border-radius: 8px;
+
+    font-family: 'Inter';
+    color: white;
+
+    display:  flex;
+    align-items: center;
+    gap: 12px;
+
+    line-height: 125%;
+}
+
+form{
+    padding: 0px 48px;
+
+    display: flex;
+}
+
+.habits{
+    margin-top: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.habit{
+    height: 64px;
+    width: 64px;
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    margin-left: 32px;
+
+    display: flex;
+    gap: 48px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.day div{
+    margin-bottom: 8px;
+    
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 125%;
+
+    text-align: center;
+}
+input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 64px;
+    width: 64px;
+
+    background-color: var(--blackRocketSeat);
+    border: 2px solid var(--darkGreyRockeatSeat);
+    border-radius: 8px;
+}
+
+input:checked{
+    background-color: var(--violetRocketSeat);
+    border: 2px solid var(--lightVioletRocketSeat);
+}
