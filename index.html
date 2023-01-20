@@ -15,75 +15,26 @@
     <header>
         <img src="./assets/logo.svg" alt="Logo">
 
-        <button><img src="./assets/plus.svg" alt="Plus">Registrar meu dia</button>
+        <button>
+            <img src="./assets/plus.svg" alt="Plus">
+            <div>Registrar meu dia</div>
+        </button>
     </header>
 
     <form>
         <div class="habits">
-            <div class="habit">💧</div>
-            <div class="habit">🍝</div>
-            <div class="habit">🏋️‍♂️</div>
-            <div class="habit">🗣</div>
-            <div class="habit">🧑‍💻</div>
+            <div class="habit" data-name="water">💧</div>
+            <div class="habit" data-name="meals">🍝</div>
+            <div class="habit" data-name="lift">🏋️‍♂️</div>
+            <div class="habit" data-name="talk">🗣</div>
+            <div class="habit" data-name="code">🧑‍💻</div>
+            <!--Adicionar botão pra criar hábito-->
+            <!--Inverter botão de cima(tornar add hábito) e adicionar botão embaixo(add dia)-->
         </div>
         <div class="days">
-            <div class="day">
-                <div>19/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>20/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>21/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>22/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>23/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>24/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
-            <div class="day">
-                <div>19/01</div>
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="meals">
-                <input type="checkbox" name="lift">
-                <input type="checkbox" name="talk">
-                <input type="checkbox" name="code">
-            </div>
         </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
