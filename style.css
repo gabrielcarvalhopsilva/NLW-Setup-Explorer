@@ -2,30 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --violetRocketSeat: #8B5CF6;
+    --violetRocketSeat: #8a5cf6cc;
+    --violetRocketSeatFull: #8B5CF6;
     --lightVioletRocketSeat: #A78BFA;
-    --blackRocketSeat: #09090A;
+    --blackRocketSeat: #09090a86;
     --darkGreyRockeatSeat: #18181B;
     color: white;
 }
 
 body {
-    background-color: var(--blackRocketSeat);
+    background-image: url(assets/background.jpg);
+    background-position-y: 25%;
 }
 
 header{
-    padding: 48px;
+    padding: 32px 48px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
+
 button{
     margin: 24px;
     padding: 16px 24px;
 
     background-color: var(--blackRocketSeat);
-    border: 2px solid var(--violetRocketSeat);
+    border: 3px solid var(--violetRocketSeatFull);
     border-radius: 8px;
 
     font-family: 'Inter';
@@ -36,25 +41,28 @@ button{
     gap: 12px;
 
     line-height: 125%;
+
+    /*hover pointer cursor*/
 }
 
 form{
-    padding: 0px 48px;
+    padding: 170px 48px 48px;
 
     display: flex;
+    width: fit-content;
 }
 
 .habits{
-    margin-top: 60px;
+    margin-top: 73px;
     
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 22px;
 }
 .habit{
-    height: 64px;
-    width: 64px;
-    font-size: 32px;
+    height: 96px;
+    width: 96px;
+    font-size: 64px;
 
     display: flex;
     align-items: center;
@@ -65,20 +73,20 @@ form{
     margin-left: 32px;
 
     display: flex;
-    gap: 48px;
+    gap: 28px;
 }
 
 .day{
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap: 22px;
 }
 
 .day div{
     margin-bottom: 8px;
     
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 32px;
     line-height: 125%;
 
     text-align: center;
@@ -87,8 +95,8 @@ input{
     appearance: none;
     -webkit-appearance: none;
 
-    height: 64px;
-    width: 64px;
+    height: 96px;
+    width: 96px;
 
     background-color: var(--blackRocketSeat);
     border: 2px solid var(--darkGreyRockeatSeat);
@@ -99,3 +107,11 @@ input:checked{
     background-color: var(--violetRocketSeat);
     border: 2px solid var(--lightVioletRocketSeat);
 }
+
+@media (max-width: 570px){
+    button div {
+        display: none;
+    }
+}
+/*media query para inverter as linhas por colunas para mobile*/
+
