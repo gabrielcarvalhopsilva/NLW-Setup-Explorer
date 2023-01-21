@@ -1,10 +1,12 @@
 const form = document.querySelector('form')
 const setup = new NLWSetup(form)
-const button = document.querySelector('header button')
+const dayButton = document.querySelectorAll('div button')[0]
+const habitButton = document.querySelectorAll('div button')[1]
 
-button.addEventListener('click', add)
+dayButton.addEventListener('click', addDayColumn)
 form.addEventListener('change', save)
-function add(){
+
+function addDayColumn(){
 
     const today = new Date().toLocaleDateString('pt-br').slice(0, -5)
     if(setup.dayExists(today)){
@@ -13,6 +15,10 @@ function add(){
         setup.addDay(today)
     }
 
+}
+
+function addHabit(){
+    //fazer
 }
 
 function save(){
