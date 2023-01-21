@@ -25,6 +25,10 @@ header{
     width: 100%;
 }
 
+header div{
+    display: flex;
+}
+
 button{
     margin: 24px;
     padding: 16px 24px;
@@ -39,8 +43,6 @@ button{
     display:  flex;
     align-items: center;
     gap: 12px;
-
-    line-height: 125%;
 
     /*hover pointer cursor*/
 }
