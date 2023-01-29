@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --violetRocketSeat: #8a5cf6cc;
+    --violetRocketSeatFull: #8B5CF6;
+    --lightVioletRocketSeat: #A78BFA;
+    --lightBlackRocketSeat: #09090a86;
+    --darkGreyRockeatSeat: #18181B;
+    color: white;
+}
+
+body {
+    background-image: url(../assets/background.jpg);
+    background-position-y: 25%;
+}
+
+header{
+    padding: 32px 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+header div{
+    display: flex;
+}
+
+header button{
+    margin: 24px;
+    padding: 16px 24px;
+
+    background-color: var(--lightBlackRocketSeat);
+    border: 3px solid var(--violetRocketSeatFull);
+    border-radius: 8px;
+
+    font-family: 'Inter';
+    color: white;
+
+    display:  flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+.data{
+    padding: 170px 48px 48px;
+
+    display: flex;
+    width: fit-content;
+}
+
+.habits{
+    margin-top: 73px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.habit{
+    height: 96px;
+    width: 96px;
+    font-size: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    margin-left: 32px;
+
+    display: flex;
+    gap: 28px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.day div{
+    margin-bottom: 8px;
+    
+    font-family: 'Roboto';
+    font-size: 32px;
+    line-height: 125%;
+
+    text-align: center;
+}
+
+.days input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 96px;
+    width: 96px;
+
+    background-color: var(--lightBlackRocketSeat);
+    border: 2px solid var(--darkGreyRockeatSeat);
+    border-radius: 8px;
+}
+
+input:checked{
+    background-color: var(--violetRocketSeat);
+    border: 2px solid var(--lightVioletRocketSeat);
+}
+
+button{
+    cursor: pointer;
+}
+@media (max-width: 570px){
+    button div {
+        display: none;
+    }
+}
+/*media query para inverter as linhas por colunas para mobile*/
