@@ -1,0 +1,94 @@
+*{
+    font-family: 'Inter';
+    --violetRocketSeat: #8a5cf6cc;
+    --violetRocketSeatFull: #8B5CF6;
+    --lightVioletRocketSeat: #A78BFA;
+    --blackRocketSeat: #18181B;
+    --darkGreyRockeatSeat: #18181B;
+}
+
+.modal-fullscreen{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: var(--blackRocketSeat);
+    height: 240px;
+    width: 400px;
+    padding: 24px;
+    border: 2px solid var(--violetRocketSeatFull);
+    border-radius: 30px;
+    position: relative;
+}
+
+.closeButton{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 36px;
+    width: 36px;
+
+    border: 2px solid var(--violetRocketSeatFull);
+    border-radius: 50%;
+    background-color: var(--blackRocketSeat);
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+.modalForm{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modalFormDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 12px 0px 12px;
+    gap: 24px;
+}
+
+.modalFormDiv > input{
+    font-size: 16px;
+    height: 24px;
+    width: 40%;
+    text-align: center;
+    border-radius: px;
+    color: black;
+}
+
+.addNewHabitButton{
+    height: 36px;
+    width: 144px;
+
+    border: 2px solid var(--violetRocketSeatFull);
+    border-radius: 8px;
+
+    background-color: var(--blackRocketSeat);
+    color: white;
+    font-size 32px;
+
+}
