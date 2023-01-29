@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habits</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/staticStyle.css">
+    <link rel="stylesheet" href="styles/modalStyle.css">
     <link rel="icon" href="https://i.ytimg.com/an/SfwM5u0Kce6Cce8_S72olg/featured_channel.jpg?v=5f3c24e8">
 </head>
 <body>
@@ -27,7 +28,7 @@
         </div>
     </header>
 
-    <form>
+    <form class="data">
         <div class="habits">
             <div class="habit" data-name="water">💧</div>
             <div class="habit" data-name="meals">🍝</div>
@@ -40,6 +41,19 @@
         <div class="days">
         </div>
     </form>
+    <div class="modal-fullscreen">
+        <div class="modal">
+            <button class="closeButton">x</button>
+            <h1>Registre um novo hábito</h1>
+            <form class="modalForm">
+                <div class="modalFormDiv">
+                    <input type="text" class="modalInput" placeholder="Hábito">
+                    <input type="text" class="modalInput" placeholder="Emoji">
+                </div>
+                <button class="addNewHabitButton">Adicionar</button>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
     <script src="script.js"></script>
 </body>
